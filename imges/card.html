@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Card</title>
+  <!-- Make sure this path is correct (same folder as card.html) -->
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+  <!-- Wrapper that centers the card without touching <body> -->
+  <div class="usercard-wrap">
+    <div class="usercard">
+      <div class="usercard-avatar">
+        <img src="gay.jpg" alt="why are u gay">
+      </div>
+      <h2 class="usercard-title">User Info</h2>
+
+      <div class="usercard-field"><strong>Email:</strong> <span id="cardEmail"></span></div>
+      <div class="usercard-field"><strong>Name:</strong> <span id="cardName"></span></div>
+      <div class="usercard-field"><strong>Number:</strong> <span id="cardNumber"></span></div>
+      <div class="usercard-field"><strong>Date:</strong> <span id="cardDate"></span></div>
+    </div>
+  </div>
+
+  <script>
+    // Fill the card from localStorage (values saved from your login page)
+    document.getElementById("cardEmail").textContent   = localStorage.getItem("email")  || "(empty)";
+    document.getElementById("cardName").textContent    = localStorage.getItem("name")   || "(empty)";
+    document.getElementById("cardNumber").textContent  = localStorage.getItem("number") || "(empty)";
+    document.getElementById("cardDate").textContent    = localStorage.getItem("date")   || "(empty)";
+  </script>
+</body>
+</html>

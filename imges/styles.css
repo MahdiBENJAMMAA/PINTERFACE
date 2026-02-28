@@ -1,0 +1,142 @@
+/* Navbar container */
+.navbar {
+    background-color: #471e7e;  
+    padding: 0;                 /* Remove default padding */
+}
+
+/* Bootstrap container keeps content centered */
+.container {
+    padding: 0;
+}
+
+/* Bootstrap row customization */
+.row {
+    margin: 0;
+}
+
+/* Make each half fill 50% */
+.col-6 {
+    padding: 0;        /* Remove internal padding so links can fill it */
+}
+
+/* Link styles for both Home and Teck */
+#navbar_title,
+#teck {
+    display: block;           /* Make the entire link behave like a block */
+    width: 100%;              /* Fill full width of the column */
+    padding: 5px 0;          /* Top & bottom padding */
+    text-align: center;       /* Center the text */
+    color: black;             /* Link color */
+    text-decoration: none;    /* Remove underline */
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* Hover effect for Home */
+#navbar_title:hover {
+    background-color: rgb(33, 29, 61);  /* Bright red */
+    text-decoration: underline;
+}
+
+/* Hover effect for Teck */
+#teck:hover {
+    background-color: rgb(33, 29, 61);  /* Bootstrap blue */
+    text-decoration: underline;
+}
+.input-container {
+    width: 100%;            /* Full width of page */
+    text-align: center;     /* Center the child inline element */
+    margin-top:80px;       /* Space from top of page */
+}
+.input-container1 {
+    width: 100%;            /* Full width of page */
+    text-align: center;     /* Center the child inline element */
+    margin-top:20px;       /* Space from top of page */
+}
+.input-container2 {
+    width: 100%;            /* Full width of page */
+    text-align: center;     /* Center the child inline element */
+    margin-top:20px;       /* Space from top of page */
+}
+.input-container3 {
+    width: 100%;            /* Full width of page */
+    text-align: center;     /* Center the child inline element */
+    margin-top:-47px;       /* Space from top of page */
+}
+.input-container input,
+.input-container1 input,
+.input-container2 input,
+.input-container3 input {
+    width: 66.66%;          /* 2/3 of parent */
+    max-width: 500px;       /* limit on big screens */
+    min-width: 200px;       /* usable on small screens */
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #16052b;
+    border-radius: 10px;
+    display: block;         /* makes it center correctly */
+    margin: 0 auto;         /* center horizontally */
+}
+
+.input-container input:hover{
+    background-color:#340e66 ;
+}    
+.input-container1 input:hover{
+    background-color:#340e66 ;   
+}
+.input-container2 input:hover{
+    background-color:#340e66 ;
+}
+.input-container3 input:hover{
+    background-color:#340e66 ;
+    
+}
+.input-container input:invalid {
+    border: 2px solid red;
+    border-radius: 10px; 
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between; /* left & right */
+    align-items: flex-start;
+    width: 66.66%;         /* width of the whole row */
+    max-width: 600px;
+    margin: 20px auto;
+    gap: 20px;             /* space between inputs */
+}
+
+.flex-row .input-container2,
+.flex-row .input-container3 {
+    width: 48%;             /* each input container takes ~half */
+    margin: 0;              /* remove previous margin-left hacks */
+}
+
+.flex-row input {
+    width: 100%;            /* input fills its container */
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #16052b;
+    border-radius: 10px;
+}
+.login-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-btn {
+    padding: 12px 24px;
+    background: #16052b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #07010f;
+}
+
